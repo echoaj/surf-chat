@@ -21,6 +21,8 @@ import uuid from 'react-uuid';
 // TODO: Mobile Support
 // TODO: Deployment on Firebase
 // TODO: Hide API firebase Key
+// const URL = "http://localhost:4000";
+const URL = "https://surf-chat-jsb.herokuapp.com";
 
 
 // Firebase Config and Initialization
@@ -80,7 +82,7 @@ function RealTimeChatRoom() {
 
 	useEffect(
 		() => {
-			socketRef.current = io.connect("http://localhost:4000");
+			socketRef.current = io.connect(URL);
 			socketRef.current.on("message-signal", ({ userUUID, message, msgID }) => {
 				let userID = userUUID;
 				let text = message;
