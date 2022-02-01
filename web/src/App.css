@@ -16,7 +16,7 @@
 }
 
 body {
-  background-image: url("images/surf1.jpg");
+  background-image: url("images/surf.jpg");
   background-size: cover; /* Resize the background image to cover the entire container */
   font-family: 'Zen Kaku Gothic New', sans-serif;
 }
